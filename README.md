@@ -20,4 +20,4 @@ All the dependencies and required libraries are included in the file requirement
 Open terminal or any IDE and run app.py file
 
 ## Demo
-<img src="demo/demo.gif"># Face_Mask_Detection
+<img src="demo/demo.gif"
