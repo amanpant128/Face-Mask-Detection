@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection</title>
+    <link rel="icon" href="https://img.icons8.com/bubbles/50/000000/coronavirus.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Face Mask Detection</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+   <style>
+        img {
+          border-radius: 20px;
+        }
+       .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0300a;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+         li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: white;
+        }
+        .active {
+            background-color: rgb(240, 102, 10);
+        }
+
+        li {
+            float: left;
+        }
+        .foo{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+   width: 100%;
+        }
+        .foo{
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+        }
+        .foo ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        .foo li {
+            float: left;
+            padding: 12px;
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+            width: 25%;
+            text-align: center;
+        }
+        .tech li{
+            float:none;
+        }
+    </style>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/image">Image</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/video">Video</a>
+      <li class="nav-item">
+        <a class="nav-link" href="/technology">Technology</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</head>
+<body style="background-image: url({{ url_for('static', filename='corona_1.jpg') }});background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;opacity: 2;">
+    {% block image %}
+    {% endblock %}
+    <div class="foo">
+        <ul>
+            <img src = "/static/bowhead.regular (1).png" style="float:right">
+            <li><a class="right" href="https://www.linkedin.com/in/aman-pant-3b09811a/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px;color: orange;"></i></a></li>
+            <li><a class="right" href="https://github.com/amanpant128" target="_blank"><i class="fa fa-github" style="font-size:24px;color: orange;"></i></a></li>
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
