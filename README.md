@@ -20,4 +20,4 @@ All the dependencies and required libraries are included in the file requirement
 Open terminal or any IDE and run app.py file
 
 ## Demo
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+<img src="demo/demo.gif" width="100" height="100" />
