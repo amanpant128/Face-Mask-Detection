@@ -8,8 +8,7 @@ In the present scenario due to Covid-19, there is no efficient face mask detecti
 2. Tensorflow==2.3.0  
 3. Numpy==1.18.1  
 4. OpenCV==4.4.0.40  
-5. Flask==1.1.1  
-6. MobileNet_V2  
+5. Flask==1.1.1   
 
 ## Prerequisites
 
